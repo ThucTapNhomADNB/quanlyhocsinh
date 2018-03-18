@@ -32,19 +32,18 @@
             this.mnuSystem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btTimKiem = new System.Windows.Forms.Button();
+            this.btxoa = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
+            this.rbNu = new System.Windows.Forms.RadioButton();
+            this.rbNam = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbTonGiao = new System.Windows.Forms.TextBox();
             this.tbDanToc = new System.Windows.Forms.TextBox();
             this.tbNoiSinh = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbNgaySinh = new System.Windows.Forms.TextBox();
             this.tbHoTen = new System.Windows.Forms.TextBox();
             this.tbMaHs = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -90,19 +89,18 @@
             this.pnlMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pnlMenu.Controls.Add(this.button5);
-            this.pnlMenu.Controls.Add(this.button4);
-            this.pnlMenu.Controls.Add(this.button3);
-            this.pnlMenu.Controls.Add(this.button2);
-            this.pnlMenu.Controls.Add(this.button1);
-            this.pnlMenu.Controls.Add(this.radioButton2);
-            this.pnlMenu.Controls.Add(this.radioButton1);
+            this.pnlMenu.Controls.Add(this.btTimKiem);
+            this.pnlMenu.Controls.Add(this.btxoa);
+            this.pnlMenu.Controls.Add(this.btSua);
+            this.pnlMenu.Controls.Add(this.btThem);
+            this.pnlMenu.Controls.Add(this.rbNu);
+            this.pnlMenu.Controls.Add(this.rbNam);
             this.pnlMenu.Controls.Add(this.label8);
             this.pnlMenu.Controls.Add(this.label7);
             this.pnlMenu.Controls.Add(this.tbTonGiao);
             this.pnlMenu.Controls.Add(this.tbDanToc);
             this.pnlMenu.Controls.Add(this.tbNoiSinh);
-            this.pnlMenu.Controls.Add(this.textBox6);
+            this.pnlMenu.Controls.Add(this.tbNgaySinh);
             this.pnlMenu.Controls.Add(this.tbHoTen);
             this.pnlMenu.Controls.Add(this.tbMaHs);
             this.pnlMenu.Controls.Add(this.label6);
@@ -116,71 +114,66 @@
             this.pnlMenu.Size = new System.Drawing.Size(182, 334);
             this.pnlMenu.TabIndex = 1;
             // 
-            // button5
+            // btTimKiem
             // 
-            this.button5.Location = new System.Drawing.Point(99, 268);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Tìm kiếm";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btTimKiem.Location = new System.Drawing.Point(99, 268);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btTimKiem.TabIndex = 6;
+            this.btTimKiem.Text = "Tìm kiếm";
+            this.btTimKiem.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btxoa
             // 
-            this.button4.Location = new System.Drawing.Point(99, 297);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Xóa";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btxoa.Location = new System.Drawing.Point(99, 297);
+            this.btxoa.Name = "btxoa";
+            this.btxoa.Size = new System.Drawing.Size(75, 23);
+            this.btxoa.TabIndex = 6;
+            this.btxoa.Text = "Xóa";
+            this.btxoa.UseVisualStyleBackColor = true;
+            this.btxoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
-            // button3
+            // btSua
             // 
-            this.button3.Location = new System.Drawing.Point(12, 297);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btSua.Location = new System.Drawing.Point(12, 297);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(75, 23);
+            this.btSua.TabIndex = 6;
+            this.btSua.Text = "Sửa";
+            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
-            // button2
+            // btThem
             // 
-            this.button2.Location = new System.Drawing.Point(12, 268);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btThem.Location = new System.Drawing.Point(12, 268);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(75, 23);
+            this.btThem.TabIndex = 6;
+            this.btThem.Text = "Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
-            // button1
+            // rbNu
             // 
-            this.button1.Location = new System.Drawing.Point(155, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(18, 18);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = true;
+            this.rbNu.AutoSize = true;
+            this.rbNu.Location = new System.Drawing.Point(135, 102);
+            this.rbNu.Name = "rbNu";
+            this.rbNu.Size = new System.Drawing.Size(39, 17);
+            this.rbNu.TabIndex = 4;
+            this.rbNu.TabStop = true;
+            this.rbNu.Text = "Nữ";
+            this.rbNu.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbNam
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(135, 102);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(39, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(74, 102);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbNam.AutoSize = true;
+            this.rbNam.Location = new System.Drawing.Point(74, 102);
+            this.rbNam.Name = "rbNam";
+            this.rbNam.Size = new System.Drawing.Size(47, 17);
+            this.rbNam.TabIndex = 4;
+            this.rbNam.TabStop = true;
+            this.rbNam.Text = "Nam";
+            this.rbNam.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -221,12 +214,13 @@
             this.tbNoiSinh.Size = new System.Drawing.Size(100, 20);
             this.tbNoiSinh.TabIndex = 2;
             // 
-            // textBox6
+            // tbNgaySinh
             // 
-            this.textBox6.Location = new System.Drawing.Point(74, 127);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 2;
+            this.tbNgaySinh.Location = new System.Drawing.Point(74, 127);
+            this.tbNgaySinh.Name = "tbNgaySinh";
+            this.tbNgaySinh.Size = new System.Drawing.Size(100, 20);
+            this.tbNgaySinh.TabIndex = 2;
+            this.tbNgaySinh.Text = "dd-mm-yyyy";
             // 
             // tbHoTen
             // 
@@ -360,19 +354,18 @@
         private System.Windows.Forms.ToolStripMenuItem thốngKêToolStripMenuItem;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlContent;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button btTimKiem;
+        private System.Windows.Forms.Button btxoa;
+        private System.Windows.Forms.Button btSua;
+        private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.RadioButton rbNu;
+        private System.Windows.Forms.RadioButton rbNam;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbTonGiao;
         private System.Windows.Forms.TextBox tbDanToc;
         private System.Windows.Forms.TextBox tbNoiSinh;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbNgaySinh;
         private System.Windows.Forms.TextBox tbHoTen;
         private System.Windows.Forms.TextBox tbMaHs;
         private System.Windows.Forms.Label label6;
