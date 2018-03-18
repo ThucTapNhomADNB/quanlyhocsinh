@@ -64,6 +64,7 @@
             this.menu.Size = new System.Drawing.Size(711, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
+            this.menu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menu_ItemClicked);
             // 
             // mnuSystem
             // 
@@ -216,11 +217,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Location = new System.Drawing.Point(3, 13);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 16);
+            this.label9.Size = new System.Drawing.Size(128, 16);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Danh sách học sinh";
+            this.label9.Text = "Bang điểm học sinh ";
             // 
             // dgvHocSinh
             // 

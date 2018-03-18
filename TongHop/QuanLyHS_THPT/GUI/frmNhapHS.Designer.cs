@@ -307,21 +307,21 @@
             // dgvHocSinh
             // 
             this.dgvHocSinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHocSinh.Location = new System.Drawing.Point(0, 29);
+            this.dgvHocSinh.Location = new System.Drawing.Point(0, 54);
             this.dgvHocSinh.Name = "dgvHocSinh";
-            this.dgvHocSinh.Size = new System.Drawing.Size(684, 304);
+            this.dgvHocSinh.Size = new System.Drawing.Size(684, 279);
             this.dgvHocSinh.TabIndex = 2;
             this.dgvHocSinh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHocSinh_CellClick);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(168, 9);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 16);
+            this.label9.Size = new System.Drawing.Size(348, 26);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Danh sách học sinh";
+            this.label9.Text = "Danh sách học sinh toàn trường  ";
             // 
             // frmNhapHS
             // 
@@ -333,7 +333,7 @@
             this.Controls.Add(this.menu);
             this.MainMenuStrip = this.menu;
             this.Name = "frmNhapHS";
-            this.Text = "Hệ thống quản lý Học sinh";
+            this.Text = "Hồ sơ Học sinh";
             this.Load += new System.EventHandler(this.frmNhapHS_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
