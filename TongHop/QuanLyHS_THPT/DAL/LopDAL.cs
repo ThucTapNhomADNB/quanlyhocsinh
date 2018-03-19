@@ -1,10 +1,10 @@
-﻿using System;
+﻿using QuanLyHS_THPT.ENTITY;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using QuanLyHS_THPT.ENTITY;
 
 namespace QuanLyHS_THPT.DAL
 {
@@ -35,6 +35,5 @@ namespace QuanLyHS_THPT.DAL
             string query = string.Format("SELECT * FROM dbo.LOP WHERE TENLOP LIKE '%{0}%'", name);
             return dtConnect.GETdata(query);
         }
-
     }
 }

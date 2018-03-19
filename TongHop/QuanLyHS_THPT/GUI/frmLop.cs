@@ -32,18 +32,17 @@ namespace QuanLyHS_THPT.GUI
             dgvLop.DataSource = hsDAL.LoadDS();
         }
 
-        private void dgvLop_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvLop_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             int numRow;
             numRow = e.RowIndex;
-            //   textBox1.Text = dataView.Rows[numrow].Cells[1].Value.ToString();
             txtmalop.Text = dgvLop.Rows[numRow].Cells[0].Value.ToString();
             txttenlop.Text = dgvLop.Rows[numRow].Cells[1].Value.ToString();
             txtsiso.Text = dgvLop.Rows[numRow].Cells[2].Value.ToString();
             txtmagvcn.Text = dgvLop.Rows[numRow].Cells[3].Value.ToString();
+
         }
-        
-       
+
         private void btnthem_Click(object sender, EventArgs e)
         {
             Lop l = new Lop();
@@ -69,16 +68,10 @@ namespace QuanLyHS_THPT.GUI
                     else
                     {
                         l.SiSo = Convert.ToInt16(txtsiso.Text);
-                        if (txtmagvcn.TextLength == 0)
-                        {
-                            MessageBox.Show("Chưa nhập mã GVCN", "Lỗi");
-                        }
-                        else
-                        {
-                            l.MaGVCN = Convert.ToInt16(txtmagvcn.Text);
-                            lDAL.insertLOP(l);
-                            dgvLop.DataSource = lDAL.LoadDS();
-                        }
+                        l.MaGVCN = Convert.ToInt16(txtmagvcn.Text);
+                        lDAL.insertLOP(l);
+                        dgvLop.DataSource = lDAL.LoadDS();
+
                     }
                 }
             }
@@ -110,16 +103,10 @@ namespace QuanLyHS_THPT.GUI
                     else
                     {
                         l.SiSo = Convert.ToInt16(txtsiso.Text);
-                        if (txtmagvcn.TextLength == 0)
-                        {
-                            MessageBox.Show("Chưa nhập mã GVCN", "Lỗi");
-                        }
-                        else
-                        {
-                            l.MaGVCN = Convert.ToInt16(txtmagvcn.Text);
-                            lDAL.insertLOP(l);
-                            dgvLop.DataSource = lDAL.LoadDS();
-                        }
+                        l.MaGVCN = Convert.ToInt16(txtmagvcn.Text);
+                        lDAL.SuaLop(l);
+                        dgvLop.DataSource = lDAL.LoadDS();
+
                     }
                 }
             }
@@ -137,6 +124,7 @@ namespace QuanLyHS_THPT.GUI
             LopDAL lDAL = new LopDAL();
             dgvLop.DataSource = lDAL.searchLop(searchtxt);
         }
+
+       
     }
 }
-

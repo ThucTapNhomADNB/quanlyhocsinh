@@ -36,7 +36,6 @@ namespace QuanLyHS_THPT.GUI
         {
             int numRow;
             numRow = e.RowIndex;
-            //   textBox1.Text = dataView.Rows[numrow].Cells[1].Value.ToString();
             tbMaHs.Text = dgvHocSinh.Rows[numRow].Cells[0].Value.ToString();
             tbHoTen.Text = dgvHocSinh.Rows[numRow].Cells[1].Value.ToString();
             string gt= dgvHocSinh.Rows[numRow].Cells[2].Value.ToString();

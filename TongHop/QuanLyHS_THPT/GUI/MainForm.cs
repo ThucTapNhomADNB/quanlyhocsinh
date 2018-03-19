@@ -35,10 +35,22 @@ namespace QuanLyHS_THPT.GUI
             FrmNhapDiem.ShowDialog();
         }
 
+        private void hồSơGiáoViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhapGiaoVien FrmNhapGiaoVien = new frmNhapGiaoVien();
+            FrmNhapGiaoVien.ShowDialog();
+        }
+
         private void danhSáchLớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmLop FrmLop = new frmLop();
             FrmLop.ShowDialog();
+        }
+
+        private void phânCôngGiảngDạyToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPhanCongGiangDay FrmPCGiangDay = new frmPhanCongGiangDay();
+            FrmPCGiangDay.ShowDialog();
         }
     }
 }
