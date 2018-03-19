@@ -34,5 +34,11 @@ namespace QuanLyHS_THPT.GUI
             frmNhapDiem FrmNhapDiem = new frmNhapDiem();
             FrmNhapDiem.ShowDialog();
         }
+
+        private void danhSáchLớpHọcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLop FrmLop = new frmLop();
+            FrmLop.ShowDialog();
+        }
     }
 }
