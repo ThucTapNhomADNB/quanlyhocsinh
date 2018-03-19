@@ -30,7 +30,7 @@ GO
 CREATE TABLE LOP
 (
    MALOP INT PRIMARY KEY IDENTITY(1,1),
-   NAMHOC NVARCHAR(20),
+   TENLOP NVARCHAR(20),
    SISO INT,
    MA_GVCHUNHIEM INT REFERENCES dbo.GIAOVIEN(MAGIAOVIEN)
 )
@@ -140,3 +140,27 @@ GO
 DELETE dbo.HOCSINH WHERE MAHOCSINH=4
 
 UPDATE dbo.HOCSINH SET HOTEN ='a' ,GIOITINH='Nam',NGAYSINH='1-1-1997',NOISINH='ha noi',DANTOC='kinh',TONGIAO='khong' WHERE MAHOCSINH=1
+
+SELECT * FROM dbo.HOCSINH WHERE HOTEN LIKE '%uye%'
+SELECT * FROM dbo.MONHOC WHERE TENMONHOC
+
+INSERT dbo.HOCSINH
+        ( 
+          HOTEN ,
+          GIOITINH ,
+          NGAYSINH ,
+          NOISINH ,
+          DANTOC ,
+          TONGIAO
+        )
+VALUES  ( 
+          N'Nguyen Van A' , -- HOTEN - nvarchar(50)
+          N'Nam' , -- GIOITINH - nvarchar(5)
+          '11-1-1997', -- NGAYSINH - datetime
+          N'Ha nội' , -- NOISINH - nvarchar(50)
+          N'Kinh' , -- DANTOC - nvarchar(50)
+          N'Không'  -- TONGIAO - nvarchar(50)
+        )
+SELECT * FROM dbo.LOP
+
+SELECT * FROM dbo.MONHOC

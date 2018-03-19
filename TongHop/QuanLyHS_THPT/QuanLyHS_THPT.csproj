@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\BangDiem.cs" />
+    <Compile Include="DAL\BangDiemDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
     <Compile Include="DAL\HocSinhDAL.cs" />
     <Compile Include="DAL\MonHocDAL.cs" />
@@ -81,6 +81,18 @@
     <Compile Include="GUI\frmNhapHS.Designer.cs">
       <DependentUpon>frmNhapHS.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmPhanCongGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPhanCongGiaoVien.Designer.cs">
+      <DependentUpon>frmPhanCongGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -97,6 +109,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNhapHS.resx">
       <DependentUpon>frmNhapHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPhanCongGiaoVien.resx">
+      <DependentUpon>frmPhanCongGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,7 +139,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="IMG\suachua.png" />
+    <Content Include="IMG\timkien.gif" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="IMG\dropDown.png" />
   </ItemGroup>

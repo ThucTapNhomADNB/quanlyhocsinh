@@ -17,17 +17,25 @@ namespace QuanLyHS_THPT.GUI
         public frmNhapDiem()
         {
             InitializeComponent();
-           
+            Load();
         }
 
-        private void frmNhapDiem_Load(object sender, EventArgs e)
+        private void cbLop_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
-
-        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        void Load()
         {
+            BangDiemDAL bangdiemDAL = new BangDiemDAL();
+            DataTable dataLop = bangdiemDAL.LoadDSLop();
 
+            cbLop.DataSource = dataLop;
+            //cbLop.DisplayMember = "TENLOP";
+            //cbLop.ValueMember = "MALOP";
+            cbLop.DisplayMember = "HOTEN";
+            cbLop.ValueMember = "MAHOCSINH";
         }
+
+    
     }
 }

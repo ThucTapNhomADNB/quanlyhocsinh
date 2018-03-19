@@ -10,30 +10,31 @@ namespace QuanLyHS_THPT.DAL
 {
     class MonHocDAL
     {
-        DatabaseConnect dtConnet = new DatabaseConnect();
+        DatabaseConnect dtConnect = new DatabaseConnect();
         public DataTable LoadDS()
         {
             string query = "SELECT * FROM  dbo.MONHOC ";
-            DatabaseConnect dtConnet = new DatabaseConnect();
-            return dtConnet.GETdata(query);
+            return dtConnect.GETdata(query);
         }
         public void insertMonHoc(MonHoc mh)
         {
             string query = string.Format("INSERT dbo.MONHOC VALUES ( N'{0}')", mh.TenMonHoc);
-            DatabaseConnect dtConnet = new DatabaseConnect();
-            dtConnet.ExecuteNonQuery(query);
+            dtConnect.ExecuteNonQuery(query);
         }
         public void deleteMonHoc(int id)
         {
             string query = string.Format("DELETE dbo.MONHOC WHERE MAMONHOC={0}", id);
-            DatabaseConnect dtConnet = new DatabaseConnect();
-            dtConnet.ExecuteNonQuery(query);
+            dtConnect.ExecuteNonQuery(query);
         }
         public void SuaMonHoc(MonHoc mh)
         {
             string query = string.Format("UPDATE dbo.MONHOC SET TENMONHOC='{1}' WHERE MAMONHOC={0}", mh.MaMonHoc, mh.TenMonHoc);
-            DatabaseConnect dtConnet = new DatabaseConnect();
-            dtConnet.ExecuteNonQuery(query);
+            dtConnect.ExecuteNonQuery(query);
+        }
+        public DataTable searchMonHoc(string name)
+        {
+            string query = string.Format("SELECT * FROM dbo.MONHOC WHERE TENMONHOC LIKE '%{0}%'", name);
+            return dtConnect.GETdata(query);
         }
     }
 }

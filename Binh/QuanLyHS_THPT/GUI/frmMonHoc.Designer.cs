@@ -215,6 +215,7 @@
             this.Controls.Add(this.menu);
             this.Name = "frmMonHoc";
             this.Text = "Hệ thống quản lý Học sinh";
+            this.Load += new System.EventHandler(this.frmMonHoc_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.pnlMenu.ResumeLayout(false);

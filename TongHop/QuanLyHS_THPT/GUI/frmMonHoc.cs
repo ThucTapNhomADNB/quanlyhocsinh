@@ -115,6 +115,11 @@ namespace QuanLyHS_THPT.GUI
 
         }
 
-       
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string searchtxt = txtTimKiem.Text;
+            MonHocDAL monhocDAL = new MonHocDAL();
+            dgvMonHoc.DataSource = monhocDAL.searchMonHoc(searchtxt);
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace QuanLyHS_THPT.DAL
     class DatabaseConnect
     {
         public SqlConnection dataConection() {
-             return new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=QUANLIHOCSINH;Integrated Security=True");
+             return new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=QUANLYHOCSINH;Integrated Security=True");
         }
         public DataTable GETdata(string querySQL)
         {
@@ -26,7 +26,7 @@ namespace QuanLyHS_THPT.DAL
             }
             catch
             {
-                MessageBox.Show("Khong lai duoc du lieu", "loi");
+                MessageBox.Show("Không tải được dữ liệu", "Lỗi");
                 return null;
             }
         }
@@ -45,7 +45,7 @@ namespace QuanLyHS_THPT.DAL
             }
             catch
             {
-                MessageBox.Show("Loi thuc thi ", "Loi");
+                MessageBox.Show("Lỗi thực thi", "Lỗi");
                 
             }
 

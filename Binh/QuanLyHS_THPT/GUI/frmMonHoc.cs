@@ -103,5 +103,10 @@ namespace QuanLyHS_THPT.GUI
 
             }
         }
+
+        private void frmMonHoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
