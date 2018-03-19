@@ -25,3 +25,6 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\o
 C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\Nhan\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
 C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\Nhan\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
 C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\Nhan\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Nhan\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Nhan\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Nhan\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
