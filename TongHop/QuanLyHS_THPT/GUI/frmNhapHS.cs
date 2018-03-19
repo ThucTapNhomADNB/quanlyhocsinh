@@ -42,9 +42,7 @@ namespace QuanLyHS_THPT.GUI
             string gt= dgvHocSinh.Rows[numRow].Cells[2].Value.ToString();
             if (gt == "Nam") rbNam.Checked = true;
             else if (gt == "Nữ") rbNu.Checked = true;
-
-            string ns = dgvHocSinh.Rows[numRow].Cells[3].Value.ToString();
-            tbNgaySinh.Text = ns;
+            dtpNgaySinh.Value = Convert.ToDateTime(dgvHocSinh.Rows[numRow].Cells[3].Value);
             tbNoiSinh.Text = dgvHocSinh.Rows[numRow].Cells[4].Value.ToString();
             tbDanToc.Text = dgvHocSinh.Rows[numRow].Cells[5].Value.ToString();
             tbTonGiao.Text = dgvHocSinh.Rows[numRow].Cells[6].Value.ToString();
@@ -58,63 +56,56 @@ namespace QuanLyHS_THPT.GUI
             
             if(tbMaHs.TextLength != 0)
             {
-                MessageBox.Show("Khong can nhap ma hoc sinh"," loi " );
+                MessageBox.Show("Khong can nhap ma hoc sinh", " Lỗi ");
             }
             else
             {
                 if (tbHoTen.TextLength ==0)
                 {
-                    MessageBox.Show("Chua nhap ho ten hoc sinh"," loi ");
+                    MessageBox.Show("Chua nhap ho ten hoc sinh", " Lỗi ");
                 }
                 else
                 {
                     hs.HoTen = tbHoTen.Text;
-                    if(rbNam.Checked== false && rbNu.Checked == false)
+                    if (rbNam.Checked == false && rbNu.Checked == false)
                     {
-                        MessageBox.Show("Chua chon gioi tinh"," loi " );
+                        MessageBox.Show("Chua chon gioi tinh", " Lỗi ");
                     }
                     else
                     {
                         if (rbNam.Checked == true) hs.GioiTinh = "Nam";
                         else if (rbNu.Checked == true) hs.GioiTinh = "Nữ";
-                        if(tbNgaySinh.Text=="dd-mm-yyyy" || tbNgaySinh.TextLength==0)
+                        hs.NgaySinh = Convert.ToDateTime(dtpNgaySinh.Value);
+
+                        if (tbNoiSinh.TextLength == 0)
                         {
-                            MessageBox.Show("Chua nhap ngay sinh"," loi " );
+                            MessageBox.Show("Chua nhap noi sinh ", " Lỗi ");
                         }
                         else
                         {
-                            hs.NgaySinh =Convert.ToDateTime( tbNgaySinh.Text);
-                     
-                            if (tbNoiSinh.TextLength == 0)
+                            hs.NoiSinh = tbNoiSinh.Text;
+                            if (tbDanToc.TextLength == 0)
                             {
-                                MessageBox.Show("Chua nhap noi sinh "," loi " );
+                                MessageBox.Show("Chua nhap dan toc", " Lỗi ");
                             }
                             else
                             {
-                                hs.NoiSinh = tbNoiSinh.Text;
-                                if (tbDanToc.TextLength == 0)
+                                hs.DanToc = tbDanToc.Text;
+                                if (tbTonGiao.TextLength == 0)
                                 {
-                                    MessageBox.Show("Chua nhap dan toc", " loi ");
+                                    MessageBox.Show("Chua nhap ton giao", " Lỗi ");
                                 }
                                 else
                                 {
-                                    hs.DanToc = tbDanToc.Text;
-                                    if (tbTonGiao.TextLength == 0)
-                                    {
-                                        MessageBox.Show("Chua nhap ton giao", " loi ");
-                                    }
-                                    else
-                                    {
-                                        hs.TonGiao = tbTonGiao.Text;
-                                        hsDAL.insertHocSinh(hs);
-                                        dgvHocSinh.DataSource = hsDAL.LoadDS();
-                                    }
+                                    hs.TonGiao = tbTonGiao.Text;
+                                    hsDAL.insertHocSinh(hs);
+                                    dgvHocSinh.DataSource = hsDAL.LoadDS();
                                 }
-                            }   
+                            }
                         }
-                    }
-                }
-            }
+                    } //                            
+                 }
+              }
             
 
         }
@@ -125,7 +116,7 @@ namespace QuanLyHS_THPT.GUI
             HocSinhDAL hsDAL = new HocSinhDAL();
             if (tbMaHs.TextLength == 0)
             {
-                MessageBox.Show("Chua co ma hoc sinh", " loi ");
+                MessageBox.Show("Chua co ma hoc sinh", " Lỗi ");
             }
             else
             {
@@ -137,7 +128,7 @@ namespace QuanLyHS_THPT.GUI
                 }
                 catch
                 {
-                    MessageBox.Show("ma hoc sinh khong thoa man", " loi ");
+                    MessageBox.Show("ma hoc sinh khong thoa man", " Lỗi ");
                 }
 
             }
@@ -151,57 +142,50 @@ namespace QuanLyHS_THPT.GUI
 
             if (tbMaHs.Text != hs.MaHocSinh.ToString())
             {
-                MessageBox.Show("Khong duoc sua ma hoc sinh", " loi ");
+                MessageBox.Show("Khong duoc sua ma hoc sinh", " Lỗi ");
             }
             else
             {
                 if (tbHoTen.TextLength == 0)
                 {
-                    MessageBox.Show("Chua nhap ho ten hoc sinh", " loi ");
+                    MessageBox.Show("Chua nhap ho ten hoc sinh", " Lỗi ");
                 }
                 else
                 {
                     hs.HoTen = tbHoTen.Text;
                     if (rbNam.Checked == false && rbNu.Checked == false)
                     {
-                        MessageBox.Show("Chua chon gioi tinh", " loi ");
+                        MessageBox.Show("Chua chon gioi tinh", " Lỗi ");
                     }
                     else
                     {
                         if (rbNam.Checked == true) hs.GioiTinh = "Nam";
                         else if (rbNu.Checked == true) hs.GioiTinh = "Nữ";
-                        if (tbNgaySinh.Text == "dd-mm-yyyy" || tbNgaySinh.TextLength == 0)
+                        hs.NgaySinh = Convert.ToDateTime(dtpNgaySinh.Value);
+
+                        if (tbNoiSinh.TextLength == 0)
                         {
-                            MessageBox.Show("Chua nhap ngay sinh", " loi ");
+                            MessageBox.Show("Chua nhap noi sinh ", " Lỗi ");
                         }
                         else
                         {
-                            hs.NgaySinh = Convert.ToDateTime(tbNgaySinh.Text);
-
-                            if (tbNoiSinh.TextLength == 0)
+                            hs.NoiSinh = tbNoiSinh.Text;
+                            if (tbDanToc.TextLength == 0)
                             {
-                                MessageBox.Show("Chua nhap noi sinh ", " loi ");
+                                MessageBox.Show("Chua nhap dan toc", " Lỗi ");
                             }
                             else
                             {
-                                hs.NoiSinh = tbNoiSinh.Text;
-                                if (tbDanToc.TextLength == 0)
+                                hs.DanToc = tbDanToc.Text;
+                                if (tbTonGiao.TextLength == 0)
                                 {
-                                    MessageBox.Show("Chua nhap dan toc", " loi ");
+                                    MessageBox.Show("Chua nhap ton giao", " Lỗi ");
                                 }
                                 else
                                 {
-                                    hs.DanToc = tbDanToc.Text;
-                                    if (tbTonGiao.TextLength == 0)
-                                    {
-                                        MessageBox.Show("Chua nhap ton giao", " loi ");
-                                    }
-                                    else
-                                    {
-                                        hs.TonGiao = tbTonGiao.Text;
-                                        hsDAL.SuaHocSinh(hs);
-                                        dgvHocSinh.DataSource = hsDAL.LoadDS();
-                                    }
+                                    hs.TonGiao = tbTonGiao.Text;
+                                    hsDAL.SuaHocSinh(hs);
+                                    dgvHocSinh.DataSource = hsDAL.LoadDS();
                                 }
                             }
                         }
@@ -209,6 +193,17 @@ namespace QuanLyHS_THPT.GUI
                 }
             }
 
+        }
+
+        
+
+
+
+        private void tbTimKIem_TextChanged(object sender, EventArgs e)
+        {
+            string searchtxt = tbTimKIem.Text;
+            HocSinhDAL hsDAL = new HocSinhDAL();
+            dgvHocSinh.DataSource = hsDAL.searchHS(searchtxt);
         }
     }
 }

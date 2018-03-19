@@ -24,6 +24,10 @@ namespace QuanLyHS_THPT.GUI
         {
 
         }
-        
+
+        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
