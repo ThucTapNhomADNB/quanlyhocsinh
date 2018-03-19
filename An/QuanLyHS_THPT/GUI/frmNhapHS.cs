@@ -42,7 +42,7 @@ namespace QuanLyHS_THPT.GUI
             string gt= dgvHocSinh.Rows[numRow].Cells[2].Value.ToString();
             if (gt == "Nam") rbNam.Checked = true;
             else if (gt == "Nữ") rbNu.Checked = true;
-
+     
             string ns = dgvHocSinh.Rows[numRow].Cells[3].Value.ToString();
             tbNgaySinh.Text = ns;
             tbNoiSinh.Text = dgvHocSinh.Rows[numRow].Cells[4].Value.ToString();
@@ -208,6 +208,27 @@ namespace QuanLyHS_THPT.GUI
                     }
                 }
             }
+
+        }
+
+        
+
+        private void btTimKiem_Click(object sender, EventArgs e)
+        {
+            //string searchtxt = tbTimKIem.Text;
+            //HocSinhDAL hsDAL = new HocSinhDAL();
+            //dgvHocSinh.DataSource = hsDAL.searchHS(searchtxt);
+        }
+
+        private void tbTimKIem_TextChanged(object sender, EventArgs e)
+        {
+            string searchtxt = tbTimKIem.Text;
+            HocSinhDAL hsDAL = new HocSinhDAL();
+            dgvHocSinh.DataSource = hsDAL.searchHS(searchtxt);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
