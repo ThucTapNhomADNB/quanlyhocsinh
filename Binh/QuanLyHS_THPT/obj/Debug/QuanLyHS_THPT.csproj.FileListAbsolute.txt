@@ -22,33 +22,23 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\o
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
-<<<<<<< HEAD
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojResolveAssemblyReference.cache
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Form1.resources
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDangNhap.resources
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapDiem.resources
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.CoreCompileInputs.cache
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
-C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
-=======
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojResolveAssemblyReference.cache
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Form1.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDangNhap.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapDiem.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
->>>>>>> 314e58d3b137f44d48f1a015fd45cba748398c34
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojResolveAssemblyReference.cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Form1.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDangNhap.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapDiem.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiaoVien.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiaoVien.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiangDay.resources

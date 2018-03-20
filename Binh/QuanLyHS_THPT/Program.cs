@@ -16,7 +16,7 @@ namespace QuanLyHS_THPT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.frmMonHoc());
+            Application.Run(new GUI.MainForm());
         }
     }
 }

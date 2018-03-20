@@ -9,7 +9,7 @@ namespace QuanLyHS_THPT.ENTITY
     class MonHoc
     {
         private int maMonHoc;
-        private string tenMonHoc;       
+        private string tenMonHoc;
 
         public int MaMonHoc
         {

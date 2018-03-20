@@ -26,6 +26,12 @@ namespace QuanLyHS_THPT.GUI
             dgvMonHoc.DataSource = hsDAL.LoadDS();
         }
 
+        private void dgvMonHoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow = e.RowIndex;
+            txtMaMH.Text = dgvMonHoc.Rows[numrow].Cells[0].Value.ToString();
+            txtTenMH.Text= dgvMonHoc.Rows[numrow].Cells[1].Value.ToString();
+        }
         private void btnSua_Click(object sender, EventArgs e)
         {
             MonHoc mh = new MonHoc();
@@ -44,12 +50,12 @@ namespace QuanLyHS_THPT.GUI
                 }
                 else
                 {
-                    mh.TenMonHoc = txtTenMH.Text;                    
+                    mh.TenMonHoc = txtTenMH.Text;
                     mhDAL.SuaMonHoc(mh);
-                    dgvMonHoc.DataSource = mhDAL.LoadDS();                   
+                    dgvMonHoc.DataSource = mhDAL.LoadDS();
                 }
             }
-        }  
+        }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -71,7 +77,7 @@ namespace QuanLyHS_THPT.GUI
                     mh.TenMonHoc = txtTenMH.Text;
                     mhDAL.insertMonHoc(mh);
                     dgvMonHoc.DataSource = mhDAL.LoadDS();
-                     
+
                 }
             }
         }
@@ -107,6 +113,13 @@ namespace QuanLyHS_THPT.GUI
         private void frmMonHoc_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string searchtxt = txtTimKiem.Text;
+            MonHocDAL monhocDAL = new MonHocDAL();
+            dgvMonHoc.DataSource = monhocDAL.searchMonHoc(searchtxt);
         }
     }
 }

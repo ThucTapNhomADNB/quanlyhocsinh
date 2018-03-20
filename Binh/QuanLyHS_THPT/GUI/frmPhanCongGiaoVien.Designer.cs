@@ -1,6 +1,6 @@
 ﻿namespace QuanLyHS_THPT.GUI
 {
-    partial class frmMonHoc
+    partial class frmPhanCongGiaoVien
     {
         /// <summary>
         /// Required designer variable.
@@ -32,6 +32,7 @@
             this.mnuSystem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -41,8 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.dgvMonHoc = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
@@ -58,7 +57,7 @@
             this.thốngKêToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(960, 24);
+            this.menu.Size = new System.Drawing.Size(727, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -79,6 +78,7 @@
             this.pnlMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlMenu.Controls.Add(this.btnTimKiem);
             this.pnlMenu.Controls.Add(this.btnxoa);
             this.pnlMenu.Controls.Add(this.btnSua);
             this.pnlMenu.Controls.Add(this.btnThem);
@@ -89,60 +89,63 @@
             this.pnlMenu.Controls.Add(this.label1);
             this.pnlMenu.Location = new System.Drawing.Point(0, 27);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(266, 334);
+            this.pnlMenu.Size = new System.Drawing.Size(227, 319);
             this.pnlMenu.TabIndex = 2;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Location = new System.Drawing.Point(74, 284);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(75, 23);
+            this.btnTimKiem.TabIndex = 6;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
             // 
             // btnxoa
             // 
-            this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(188, 218);
+            this.btnxoa.Location = new System.Drawing.Point(153, 185);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(75, 23);
-            this.btnxoa.TabIndex = 5;
+            this.btnxoa.Size = new System.Drawing.Size(58, 23);
+            this.btnxoa.TabIndex = 6;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
-            this.btnxoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
-            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(99, 218);
+            this.btnSua.Location = new System.Drawing.Point(83, 185);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 4;
+            this.btnSua.Size = new System.Drawing.Size(53, 23);
+            this.btnSua.TabIndex = 6;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(8, 218);
+            this.btnThem.Location = new System.Drawing.Point(12, 185);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 3;
+            this.btnThem.Size = new System.Drawing.Size(60, 23);
+            this.btnThem.TabIndex = 6;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTenMH
             // 
-            this.txtTenMH.Location = new System.Drawing.Point(110, 140);
+            this.txtTenMH.Location = new System.Drawing.Point(74, 74);
             this.txtTenMH.Name = "txtTenMH";
-            this.txtTenMH.Size = new System.Drawing.Size(123, 20);
+            this.txtTenMH.Size = new System.Drawing.Size(100, 20);
             this.txtTenMH.TabIndex = 2;
             // 
             // txtMaMH
             // 
-            this.txtMaMH.Location = new System.Drawing.Point(110, 92);
+            this.txtMaMH.Location = new System.Drawing.Point(74, 51);
             this.txtMaMH.Name = "txtMaMH";
-            this.txtMaMH.Size = new System.Drawing.Size(123, 20);
-            this.txtMaMH.TabIndex = 1;
+            this.txtMaMH.Size = new System.Drawing.Size(100, 20);
+            this.txtMaMH.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 143);
+            this.label3.Location = new System.Drawing.Point(14, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 1;
@@ -151,7 +154,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 95);
+            this.label2.Location = new System.Drawing.Point(14, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 1;
@@ -161,7 +164,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 44);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 0;
@@ -173,31 +176,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContent.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pnlContent.Controls.Add(this.label4);
-            this.pnlContent.Controls.Add(this.txtTimKiem);
             this.pnlContent.Controls.Add(this.dgvMonHoc);
             this.pnlContent.Controls.Add(this.label9);
-            this.pnlContent.Location = new System.Drawing.Point(272, 27);
+            this.pnlContent.Location = new System.Drawing.Point(233, 27);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(688, 337);
+            this.pnlContent.Size = new System.Drawing.Size(494, 322);
             this.pnlContent.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(461, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Search by Name";
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Location = new System.Drawing.Point(553, 28);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(123, 20);
-            this.txtTimKiem.TabIndex = 6;
-            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // dgvMonHoc
             // 
@@ -205,33 +189,31 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMonHoc.Location = new System.Drawing.Point(6, 54);
+            this.dgvMonHoc.Location = new System.Drawing.Point(3, 54);
             this.dgvMonHoc.Name = "dgvMonHoc";
-            this.dgvMonHoc.Size = new System.Drawing.Size(682, 280);
+            this.dgvMonHoc.Size = new System.Drawing.Size(491, 265);
             this.dgvMonHoc.TabIndex = 2;
-            this.dgvMonHoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMonHoc_CellClick);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(283, 36);
+            this.label9.Size = new System.Drawing.Size(130, 16);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Danh sách môn học";
+            this.label9.Text = "Danh sách giáo viên";
             // 
-            // frmMonHoc
+            // frmPhanCongGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 361);
+            this.ClientSize = new System.Drawing.Size(727, 346);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.menu);
-            this.Name = "frmMonHoc";
+            this.Name = "frmPhanCongGiaoVien";
             this.Text = "Hệ thống quản lý Học sinh";
-            this.Load += new System.EventHandler(this.frmMonHoc_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
@@ -250,6 +232,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuSystem;
         private System.Windows.Forms.ToolStripMenuItem thốngKêToolStripMenuItem;
         private System.Windows.Forms.Panel pnlMenu;
+        private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
@@ -261,7 +244,5 @@
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.DataGridView dgvMonHoc;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
