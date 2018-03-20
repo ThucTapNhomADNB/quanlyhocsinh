@@ -47,9 +47,12 @@
   <ItemGroup>
     <Compile Include="DAL\BangDiemDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
+    <Compile Include="DAL\GiaoVienDAL.cs" />
     <Compile Include="DAL\HocSinhDAL.cs" />
     <Compile Include="DAL\LopDAL.cs" />
     <Compile Include="DAL\MonHocDAL.cs" />
+    <Compile Include="DAL\PhanCongGiangDayDAL.cs" />
+    <Compile Include="ENTITY\GiaoVien.cs" />
     <Compile Include="ENTITY\HocSinh.cs" />
     <Compile Include="ENTITY\Lop.cs" />
     <Compile Include="ENTITY\MonHoc.cs" />
@@ -83,11 +86,23 @@
     <Compile Include="GUI\frmNhapDiem.Designer.cs">
       <DependentUpon>frmNhapDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmNhapGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhapGiaoVien.Designer.cs">
+      <DependentUpon>frmNhapGiaoVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmNhapHS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmNhapHS.Designer.cs">
       <DependentUpon>frmNhapHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPhanCongGiangDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPhanCongGiangDay.Designer.cs">
+      <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmPhanCongGiaoVien.cs">
       <SubType>Form</SubType>
@@ -120,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNhapHS.resx">
       <DependentUpon>frmNhapHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPhanCongGiangDay.resx">
+      <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhanCongGiaoVien.resx">
       <DependentUpon>frmPhanCongGiaoVien.cs</DependentUpon>
