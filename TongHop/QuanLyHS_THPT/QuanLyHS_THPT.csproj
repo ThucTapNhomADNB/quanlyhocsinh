@@ -49,6 +49,7 @@
     <Compile Include="DAL\DatabaseConnect.cs" />
     <Compile Include="DAL\GiaoVienDAL.cs" />
     <Compile Include="DAL\HocSinhDAL.cs" />
+    <Compile Include="DAL\KQHTDAL.cs" />
     <Compile Include="DAL\LopDAL.cs" />
     <Compile Include="DAL\MonHocDAL.cs" />
     <Compile Include="DAL\PhanCongGiangDayDAL.cs" />
@@ -67,6 +68,12 @@
     </Compile>
     <Compile Include="GUI\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmKQHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmKQHT.Designer.cs">
+      <DependentUpon>frmKQHT.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmLop.cs">
       <SubType>Form</SubType>
@@ -123,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmKQHT.resx">
+      <DependentUpon>frmKQHT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>

@@ -42,3 +42,21 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\o
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiangDay.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojResolveAssemblyReference.cache
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Form1.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDangNhap.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapDiem.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiangDay.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiaoVien.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmKQHT.resources
