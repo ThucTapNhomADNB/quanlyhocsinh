@@ -324,7 +324,7 @@
             this.cbLop.Name = "cbLop";
             this.cbLop.Size = new System.Drawing.Size(121, 21);
             this.cbLop.TabIndex = 3;
-            this.cbLop.SelectedIndexChanged += new System.EventHandler(this.cbLop_SelectedIndexChanged);
+          
             // 
             // frmNhapDiem
             // 

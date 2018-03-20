@@ -17,25 +17,35 @@ namespace QuanLyHS_THPT.GUI
         public frmNhapDiem()
         {
             InitializeComponent();
-            Load();
+            HienThiDSGiaoVien();
+            LoadLop();
+            LoadMon();
         }
-
-        private void cbLop_SelectedIndexChanged(object sender, EventArgs e)
+        private void HienThiDSGiaoVien()
         {
-            
+            //dgvGiaoVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //GiaoVienDAL gvDAL = new GiaoVienDAL();
+            //dgvGiaoVien.DataSource = gvDAL.LoadDS();
         }
-        void Load()
+        private void LoadLop()
         {
-            BangDiemDAL bangdiemDAL = new BangDiemDAL();
-            DataTable dataLop = bangdiemDAL.LoadDSLop();
-
+            LopDAL LOPdal = new LopDAL();
+            DataTable dataLop = LOPdal.LoadDS();
             cbLop.DataSource = dataLop;
-            //cbLop.DisplayMember = "TENLOP";
-            //cbLop.ValueMember = "MALOP";
-            cbLop.DisplayMember = "HOTEN";
-            cbLop.ValueMember = "MAHOCSINH";
+            cbLop.DisplayMember = "TENLOP";
+            cbLop.ValueMember = "MALOP";
+
         }
 
-    
+        private void LoadMon()
+        {
+            MonHocDAL mondal = new MonHocDAL();
+            DataTable dataLop = mondal.LoadDS();
+            cbMonHoc.DataSource = dataLop;
+            cbMonHoc.DisplayMember = "TENMONHOC";
+            cbMonHoc.ValueMember = "MAMONHOC";
+        }
+
+
     }
 }

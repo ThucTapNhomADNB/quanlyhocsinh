@@ -36,5 +36,15 @@ namespace QuanLyHS_THPT.DAL
             string query = string.Format("SELECT * FROM dbo.GIAOVIEN WHERE HOTEN LIKE '%{0}%'", name);
             return dtConnect.GETdata(query);
         }
+        public GiaoVien getGiaoVien(int ma)
+        {
+            GiaoVien gv = new GiaoVien();
+            string query =string.Format( "SELECT * FROM dbo.GIAOVIEN WHERE MAGIAOVIEN = {0}",ma);
+            DataTable data = dtConnect.GETdata(query);
+            gv.MaGiaoVien = data.Rows[0].Field<int>(0);
+            gv.HoTen = data.Rows[0].Field<string>(1);
+            gv.ChuyenMon = data.Rows[0].Field<string>(6);
+            return gv;
+        }
     }
 }
