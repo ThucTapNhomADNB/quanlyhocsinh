@@ -38,7 +38,7 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHo
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiaoVien.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
-D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiaoVien.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiangDay.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapGiaoVien.resources

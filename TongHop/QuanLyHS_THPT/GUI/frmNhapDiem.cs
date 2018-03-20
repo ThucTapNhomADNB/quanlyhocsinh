@@ -14,14 +14,17 @@ namespace QuanLyHS_THPT.GUI
 {
     public partial class frmNhapDiem : Form
     {
+        private int maLop = 0;
+        private int maMon = 0;
+
         public frmNhapDiem()
         {
             InitializeComponent();
-            HienThiDSGiaoVien();
             LoadLop();
             LoadMon();
+            HienThiDSHocSinh();
         }
-        private void HienThiDSGiaoVien()
+        private void HienThiDSHocSinh()
         {
             //dgvGiaoVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             //GiaoVienDAL gvDAL = new GiaoVienDAL();
@@ -46,6 +49,14 @@ namespace QuanLyHS_THPT.GUI
             cbMonHoc.ValueMember = "MAMONHOC";
         }
 
+        private void cbLop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void cbMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

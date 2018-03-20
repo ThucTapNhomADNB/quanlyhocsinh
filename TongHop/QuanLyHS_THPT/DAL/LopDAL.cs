@@ -14,7 +14,7 @@ namespace QuanLyHS_THPT.DAL
         DatabaseConnect dtConnect = new DatabaseConnect();
         public DataTable LoadDS()
         {
-            string query = "SELECT * FROM  dbo.LOP ";
+            string query = "SELECT l.MALOP,l.TENLOP,l.SISO,l.MA_GVCHUNHIEM,gv.HOTEN FROM dbo.LOP l, dbo.GIAOVIEN gv WHERE l.MA_GVCHUNHIEM=gv.MAGIAOVIEN ";
             return dtConnect.GETdata(query);
         }
         public void insertLOP(Lop l)

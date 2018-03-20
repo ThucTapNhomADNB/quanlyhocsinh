@@ -20,5 +20,10 @@ namespace QuanLyHS_THPT.DAL
             string query = "SELECT * FROM dbo.MONHOC";
             return dtConnect.GETdata(query);
         }
+        public DataTable LoadBangDiemHS()
+        {
+            string query = string.Format("");
+            return dtConnect.GETdata(query);
+        }
     }
 }
