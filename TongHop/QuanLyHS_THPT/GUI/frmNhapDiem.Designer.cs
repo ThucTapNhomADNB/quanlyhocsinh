@@ -69,7 +69,7 @@
             this.thốngKêToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(773, 24);
+            this.menu.Size = new System.Drawing.Size(907, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -133,7 +133,7 @@
             // 
             this.btSua.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(62, 230);
+            this.btSua.Location = new System.Drawing.Point(62, 240);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(89, 40);
             this.btSua.TabIndex = 12;
@@ -252,7 +252,7 @@
             this.dgvHocSinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHocSinh.Location = new System.Drawing.Point(0, 85);
             this.dgvHocSinh.Name = "dgvHocSinh";
-            this.dgvHocSinh.Size = new System.Drawing.Size(546, 252);
+            this.dgvHocSinh.Size = new System.Drawing.Size(680, 252);
             this.dgvHocSinh.TabIndex = 2;
             // 
             // pnlContent
@@ -271,13 +271,13 @@
             this.pnlContent.Controls.Add(this.label9);
             this.pnlContent.Location = new System.Drawing.Point(224, 29);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(549, 340);
+            this.pnlContent.Size = new System.Drawing.Size(683, 340);
             this.pnlContent.TabIndex = 3;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(304, 62);
+            this.label11.Location = new System.Drawing.Point(414, 62);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(86, 13);
             this.label11.TabIndex = 16;
@@ -294,7 +294,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(396, 59);
+            this.textBox1.Location = new System.Drawing.Point(530, 59);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(141, 20);
             this.textBox1.TabIndex = 15;
@@ -303,7 +303,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(305, 13);
+            this.label6.Location = new System.Drawing.Point(384, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 19);
             this.label6.TabIndex = 5;
@@ -312,10 +312,11 @@
             // cbMonHoc
             // 
             this.cbMonHoc.FormattingEnabled = true;
-            this.cbMonHoc.Location = new System.Drawing.Point(379, 13);
+            this.cbMonHoc.Location = new System.Drawing.Point(470, 14);
             this.cbMonHoc.Name = "cbMonHoc";
             this.cbMonHoc.Size = new System.Drawing.Size(121, 21);
             this.cbMonHoc.TabIndex = 4;
+            this.cbMonHoc.SelectedIndexChanged += new System.EventHandler(this.cbMonHoc_SelectedIndexChanged);
             // 
             // cbLop
             // 
@@ -324,19 +325,18 @@
             this.cbLop.Name = "cbLop";
             this.cbLop.Size = new System.Drawing.Size(121, 21);
             this.cbLop.TabIndex = 3;
-          
+            this.cbLop.SelectedIndexChanged += new System.EventHandler(this.cbLop_SelectedIndexChanged);
             // 
             // frmNhapDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 369);
+            this.ClientSize = new System.Drawing.Size(907, 369);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.menu);
             this.Name = "frmNhapDiem";
             this.Text = "Hệ thống quản lý Học sinh";
-         
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.pnlMenu.ResumeLayout(false);

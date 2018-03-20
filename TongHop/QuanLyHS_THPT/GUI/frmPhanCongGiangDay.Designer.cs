@@ -112,7 +112,7 @@
             this.cbGiaoVien.Name = "cbGiaoVien";
             this.cbGiaoVien.Size = new System.Drawing.Size(147, 21);
             this.cbGiaoVien.TabIndex = 11;
-            this.cbGiaoVien.SelectedIndexChanged += new System.EventHandler(this.cbLop_SelectedIndexChanged);
+            this.cbGiaoVien.SelectedIndexChanged += new System.EventHandler(this.cbGiaoVien_SelectedIndexChanged);
             // 
             // btPhanCong
             // 

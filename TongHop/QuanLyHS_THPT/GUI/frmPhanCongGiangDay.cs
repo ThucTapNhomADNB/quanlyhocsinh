@@ -58,7 +58,7 @@ namespace QuanLyHS_THPT.GUI
             this.malop = Convert.ToInt16(dgvLopMon.Rows[numrow].Cells[0].Value.ToString());
         }
 
-        private void cbLop_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbGiaoVien_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
