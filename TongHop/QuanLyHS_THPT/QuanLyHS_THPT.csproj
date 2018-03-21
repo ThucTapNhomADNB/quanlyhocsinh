@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\AccountDAL.cs" />
     <Compile Include="DAL\BangDiemDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
     <Compile Include="DAL\GiaoVienDAL.cs" />
@@ -53,6 +54,8 @@
     <Compile Include="DAL\LopDAL.cs" />
     <Compile Include="DAL\MonHocDAL.cs" />
     <Compile Include="DAL\PhanCongGiangDayDAL.cs" />
+    <Compile Include="ENTITY\Account.cs" />
+    <Compile Include="ENTITY\BangDiem.cs" />
     <Compile Include="ENTITY\GiaoVien.cs" />
     <Compile Include="ENTITY\HocSinh.cs" />
     <Compile Include="ENTITY\Lop.cs" />
@@ -63,25 +66,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="GUI\frmKQHT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmKQHT.Designer.cs">
-      <DependentUpon>frmKQHT.cs</DependentUpon>
-=======
     <Compile Include="GUI\frmHocSinhLop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmHocSinhLop.Designer.cs">
       <DependentUpon>frmHocSinhLop.cs</DependentUpon>
->>>>>>> 31963241db589e750ea9729e2183ac7f9d6ed08c
+    </Compile>
+    <Compile Include="GUI\frmKQHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmKQHT.Designer.cs">
+      <DependentUpon>frmKQHT.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmLop.cs">
       <SubType>Form</SubType>
@@ -130,16 +137,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="GUI\frmKQHT.resx">
-      <DependentUpon>frmKQHT.cs</DependentUpon>
-=======
     <EmbeddedResource Include="GUI\frmHocSinhLop.resx">
       <DependentUpon>frmHocSinhLop.cs</DependentUpon>
->>>>>>> 31963241db589e750ea9729e2183ac7f9d6ed08c
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmKQHT.resx">
+      <DependentUpon>frmKQHT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
@@ -188,6 +196,7 @@
   <ItemGroup>
     <Content Include="IMG\suachua.png" />
     <Content Include="IMG\timkien.gif" />
+    <Content Include="IMG\truong.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="IMG\dropDown.png" />
