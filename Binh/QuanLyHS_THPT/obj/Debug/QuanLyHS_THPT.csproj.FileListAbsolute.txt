@@ -42,6 +42,7 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\o
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLHS\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiangDay.resources
+<<<<<<< HEAD
 C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
 C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
 C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
@@ -60,3 +61,11 @@ C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\Qu
 C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.CoreCompileInputs.cache
 C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
 C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+=======
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+C:\Users\ThanhNhan\Desktop\git\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+>>>>>>> 1c83ac316286a7ee43c15c7fe1cd36feded058c6

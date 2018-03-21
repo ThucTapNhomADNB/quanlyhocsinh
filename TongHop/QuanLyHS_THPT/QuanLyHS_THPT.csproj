@@ -52,6 +52,7 @@
     <Compile Include="DAL\LopDAL.cs" />
     <Compile Include="DAL\MonHocDAL.cs" />
     <Compile Include="DAL\PhanCongGiangDayDAL.cs" />
+    <Compile Include="ENTITY\BangDiem.cs" />
     <Compile Include="ENTITY\GiaoVien.cs" />
     <Compile Include="ENTITY\HocSinh.cs" />
     <Compile Include="ENTITY\Lop.cs" />
@@ -67,6 +68,12 @@
     </Compile>
     <Compile Include="GUI\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmHocSinhLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHocSinhLop.Designer.cs">
+      <DependentUpon>frmHocSinhLop.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmLop.cs">
       <SubType>Form</SubType>
@@ -104,12 +111,6 @@
     <Compile Include="GUI\frmPhanCongGiangDay.Designer.cs">
       <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmPhanCongGiaoVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmPhanCongGiaoVien.Designer.cs">
-      <DependentUpon>frmPhanCongGiaoVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +125,9 @@
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHocSinhLop.resx">
+      <DependentUpon>frmHocSinhLop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,14 +137,14 @@
     <EmbeddedResource Include="GUI\frmNhapDiem.resx">
       <DependentUpon>frmNhapDiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhapGiaoVien.resx">
+      <DependentUpon>frmNhapGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmNhapHS.resx">
       <DependentUpon>frmNhapHS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmPhanCongGiangDay.resx">
       <DependentUpon>frmPhanCongGiangDay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmPhanCongGiaoVien.resx">
-      <DependentUpon>frmPhanCongGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

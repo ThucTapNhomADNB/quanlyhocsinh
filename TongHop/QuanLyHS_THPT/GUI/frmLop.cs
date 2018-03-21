@@ -18,6 +18,7 @@ namespace QuanLyHS_THPT.GUI
         {
             InitializeComponent();
             HienThiDSLop();
+            LoadGV();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -30,8 +31,17 @@ namespace QuanLyHS_THPT.GUI
             dgvLop.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             LopDAL hsDAL = new LopDAL();
             dgvLop.DataSource = hsDAL.LoadDS();
-        }
 
+        }
+        private void LoadGV()
+        {
+            GiaoVienDAL gvDAL = new GiaoVienDAL();
+            DataTable dataGV = gvDAL.LoadDS();
+            cbGiaoVien.DataSource = dataGV;
+            cbGiaoVien.DisplayMember = "HOTEN";
+            cbGiaoVien.ValueMember = "MAGIAOVIEN";
+
+        }
         private void dgvLop_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             int numRow;
@@ -39,8 +49,12 @@ namespace QuanLyHS_THPT.GUI
             txtmalop.Text = dgvLop.Rows[numRow].Cells[0].Value.ToString();
             txttenlop.Text = dgvLop.Rows[numRow].Cells[1].Value.ToString();
             txtsiso.Text = dgvLop.Rows[numRow].Cells[2].Value.ToString();
-            txtmagvcn.Text = dgvLop.Rows[numRow].Cells[3].Value.ToString();
-
+            //   txtmagvcn.Text = dgvLop.Rows[numRow].Cells[3].Value.ToString();
+            if (dgvLop.Rows[numRow].Cells[3].Value.ToString() != "")
+            {
+                int maGV = Convert.ToInt32(dgvLop.Rows[numRow].Cells[3].Value.ToString());
+                cbGiaoVien.SelectedValue = maGV;
+            }
         }
 
         private void btnthem_Click(object sender, EventArgs e)
@@ -68,9 +82,18 @@ namespace QuanLyHS_THPT.GUI
                     else
                     {
                         l.SiSo = Convert.ToInt16(txtsiso.Text);
-                        l.MaGVCN = Convert.ToInt16(txtmagvcn.Text);
-                        lDAL.insertLOP(l);
-                        dgvLop.DataSource = lDAL.LoadDS();
+
+                        try
+                        {
+                            int maGV = Convert.ToInt16(cbGiaoVien.SelectedValue.ToString());
+                            l.MaGVCN = maGV;
+                            lDAL.insertLOP(l);
+                            dgvLop.DataSource = lDAL.LoadDS();
+
+                        }
+                        catch
+                        {
+                        }
 
                     }
                 }
@@ -103,10 +126,18 @@ namespace QuanLyHS_THPT.GUI
                     else
                     {
                         l.SiSo = Convert.ToInt16(txtsiso.Text);
-                        l.MaGVCN = Convert.ToInt16(txtmagvcn.Text);
-                        lDAL.SuaLop(l);
-                        dgvLop.DataSource = lDAL.LoadDS();
+                        try
+                        {
+                            int maGV = Convert.ToInt16(cbGiaoVien.SelectedValue.ToString());
+                            l.MaGVCN = maGV;
+                            lDAL.SuaLop(l);
+                            dgvLop.DataSource = lDAL.LoadDS();
 
+                        }
+                        catch
+                        {
+                        }
+                       
                     }
                 }
             }
