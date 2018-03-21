@@ -17,7 +17,6 @@ namespace QuanLyHS_THPT.GUI
         private int malop = 0;
         public frmKQHT()
         {
-        
             InitializeComponent();
             LoadLop();
             HienThiDSLop();
@@ -26,10 +25,20 @@ namespace QuanLyHS_THPT.GUI
         private void HienThiDSLop()
         {
             dgvdslop.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            KQHTDAL hsDAL = new KQHTDAL();
-            dgvdslop.DataSource = hsDAL.LoadDS();
-        }
+            try
+            {
+                int ma = Convert.ToInt16(cblop.SelectedValue.ToString());
 
+                KQHTDAL kqhtDAL = new KQHTDAL();
+                dgvdslop.DataSource = kqhtDAL.LoadDS(ma);
+
+                this.malop = ma;
+            }
+            catch
+            {
+
+            }
+        }
         private void LoadLop()
         {
             LopDAL lDAL = new LopDAL();
@@ -44,16 +53,26 @@ namespace QuanLyHS_THPT.GUI
             try
             {
                 int ma = Convert.ToInt16(cblop.SelectedValue.ToString());
-
-                LopDAL lDAL = new LopDAL();
-                Lop l = lDAL.getLop(ma);
-                lblmalop.Text = l.MaLop.ToString();
-                lblsiso.Text = l.SiSo.ToString();
-                lblmagvcn.Text = l.MaGVCN.ToString();
+                KQHTDAL kqhtDAL = new KQHTDAL();
+                dgvdslop.DataSource = kqhtDAL.LoadDS(ma);
                 this.malop = ma;
             }
             catch
             {
+
+            }
+        }
+
+        private void dgvdslop_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow = e.RowIndex;
+            if (dgvdslop.Rows[numrow].Cells[4].Value.ToString() != "")
+            {
+                int malop = Convert.ToInt32(dgvdslop.Rows[numrow].Cells[4].Value.ToString());
+                cblop.SelectedValue = malop;
+                LopDAL lDAL = new LopDAL();
+                Lop l = lDAL.getLop(malop);
+
             }
         }
     }

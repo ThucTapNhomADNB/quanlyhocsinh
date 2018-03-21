@@ -10,10 +10,11 @@ namespace QuanLyHS_THPT.DAL
     class KQHTDAL
     {
         DatabaseConnect dtConnect = new DatabaseConnect();
-        public DataTable LoadDS()
+        public DataTable LoadDS(int ma)
         {
-            string query = " SELECT  HS.MAHOCSINH , DIEMTBKY1 , DIEMTBKY2, DIEMTBCANAM, HANHKIEM_KY1, HANHKIEM_KI2, HANHKIEM_KY3  FROM dbo.KETQUAHOCTAP kqht, dbo.HOCSINH HS WHERE kqht.MAHOCSINH = HS.MAHOCSINH";
+            string query = string.Format(" SELECT  HS.MAHOCSINH , HOTEN, DIEMTBKY1 , DIEMTBKY2, DIEMTBCANAM  FROM dbo.KETQUAHOCTAP kqht, dbo.HOCSINH HS WHERE kqht.MAHOCSINH = HS.MAHOCSINH and kqht.MALOP={0}", ma);
             return dtConnect.GETdata(query);
+
         }
     }
 }
