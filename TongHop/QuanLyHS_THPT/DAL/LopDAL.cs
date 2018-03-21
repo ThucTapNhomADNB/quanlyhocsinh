@@ -35,16 +35,5 @@ namespace QuanLyHS_THPT.DAL
             string query = string.Format("SELECT * FROM dbo.LOP WHERE TENLOP LIKE '%{0}%'", name);
             return dtConnect.GETdata(query);
         }
-
-        public Lop getLop(int ma)
-        {
-            Lop l = new Lop();
-            string query = string.Format("SELECT * FROM dbo.LOP WHERE MALOP = {0}", ma);
-            DataTable data = dtConnect.GETdata(query);
-            l.MaLop = data.Rows[0].Field<int>(0);
-            l.SiSo = data.Rows[0].Field<int>(1);
-            l.MaGVCN  = data.Rows[0].Field<int>(6);
-            return l;
-        }
     }
 }
