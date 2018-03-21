@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyHS_THPT.GUI
 {
-    public partial class MainForm : Form
+    public partial class frmMain : Form
     {
-        public MainForm()
+        public frmMain()
         {
             InitializeComponent();
         }
