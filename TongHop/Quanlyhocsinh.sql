@@ -30,10 +30,13 @@ GO
 CREATE TABLE LOP
 (
    MALOP INT PRIMARY KEY IDENTITY(1,1),
-   NAMHOC NVARCHAR(20),
+   LOP NVARCHAR(20),
    SISO INT,
    MA_GVCHUNHIEM INT REFERENCES dbo.GIAOVIEN(MAGIAOVIEN)
 )
+GO
+ALTER TABLE dbo.LOP DROP COLUMN LOP 
+ALTER TABLE dbo.LOP ADD TenLop NVARCHAR(20)
 GO
 CREATE TABLE KETQUAHOCTAP
 (
@@ -145,3 +148,23 @@ INSERT dbo.MONHOC
         ( TENMONHOC )
 VALUES  ( N'Toan-10'  -- TENMONHOC - nvarchar(30)
           )
+	
+GO
+INSERT INTO dbo.GIAOVIEN 
+        ( HOTEN ,
+          GTINH ,
+          NGAYSINH ,
+          NOISINH ,
+          DIACHI ,
+          CHUYENMON ,
+          SODIENTHOAI
+        )
+VALUES  ( N'Nguyễn Văn An' , -- HOTEN - nvarchar(50)
+          N'Nam' , -- GTINH - nvarchar(5)
+         '2-11-1994' , -- NGAYSINH - datetime
+          N'Cát Trù' , -- NOISINH - nvarchar(50)
+          N'Cát Trù' , -- DIACHI - nvarchar(50)
+          N'Toán' , -- CHUYENMON - nvarchar(20)
+          N'0981352647'  -- SODIENTHOAI - nvarchar(11)
+        )		  
+ 

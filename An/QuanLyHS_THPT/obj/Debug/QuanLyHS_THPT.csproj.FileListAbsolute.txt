@@ -56,3 +56,21 @@ E:\nam3_ky_2\thuctapnhom\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateRe
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\An\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojResolveAssemblyReference.cache
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Form1.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDangNhap.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmHocSinhLop.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapDiem.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapGiaoVien.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiaoVien.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
+C:\Users\annv\Documents\GitHub\quanlyhocsinh\An\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources

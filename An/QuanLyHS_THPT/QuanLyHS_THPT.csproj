@@ -49,9 +49,12 @@
     <Compile Include="DAL\DatabaseConnect.cs" />
     <Compile Include="DAL\GiaoVienDAL.cs" />
     <Compile Include="DAL\HocSinhDAL.cs" />
+    <Compile Include="DAL\HocSinhLopDAL.cs" />
+    <Compile Include="DAL\LopDAL.cs" />
     <Compile Include="DAL\MonHocDAL.cs" />
     <Compile Include="ENTITY\GiaoVien.cs" />
     <Compile Include="ENTITY\HocSinh.cs" />
+    <Compile Include="ENTITY\Lop.cs" />
     <Compile Include="ENTITY\MonHoc.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -64,6 +67,18 @@
     </Compile>
     <Compile Include="GUI\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmHocSinhLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmHocSinhLop.designer.cs">
+      <DependentUpon>frmHocSinhLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLop.Designer.cs">
+      <DependentUpon>frmLop.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmMonHoc.cs">
       <SubType>Form</SubType>
@@ -108,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmHocSinhLop.resx">
+      <DependentUpon>frmHocSinhLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLop.resx">
+      <DependentUpon>frmLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMonHoc.resx">
       <DependentUpon>frmMonHoc.cs</DependentUpon>

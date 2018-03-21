@@ -34,5 +34,11 @@ namespace QuanLyHS_THPT.GUI
             frmNhapGiaoVien frmNhapGv = new frmNhapGiaoVien();
             frmNhapGv.ShowDialog();
         }
+
+        private void phânLớpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHocSinhLop frmphanlop = new frmHocSinhLop();
+            frmphanlop.ShowDialog();
+        }
     }
 }
