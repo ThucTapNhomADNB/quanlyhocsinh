@@ -20,11 +20,6 @@ namespace QuanLyHS_THPT.GUI
             InitializeComponent();
             HienThiDSHocSinh();
         }
-
-        private void frmNhapHS_Load(object sender, EventArgs e)
-        {
-
-        }
         private void HienThiDSHocSinh()
         {
             dgvHocSinh.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -45,14 +40,11 @@ namespace QuanLyHS_THPT.GUI
             tbNoiSinh.Text = dgvHocSinh.Rows[numRow].Cells[4].Value.ToString();
             tbDanToc.Text = dgvHocSinh.Rows[numRow].Cells[5].Value.ToString();
             tbTonGiao.Text = dgvHocSinh.Rows[numRow].Cells[6].Value.ToString();
-
         }
-
         private void btThem_Click(object sender, EventArgs e)
         {
             HocSinh hs = new HocSinh();
-            HocSinhDAL hsDAL = new HocSinhDAL();
-            
+            HocSinhDAL hsDAL = new HocSinhDAL();   
             if(tbMaHs.TextLength != 0)
             {
                 MessageBox.Show("Khong can nhap ma hoc sinh", " Lỗi ");
@@ -102,16 +94,13 @@ namespace QuanLyHS_THPT.GUI
                                 }
                             }
                         }
-                    } //                            
+                    }                           
                  }
               }
-            
-
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-
             HocSinhDAL hsDAL = new HocSinhDAL();
             if (tbMaHs.TextLength == 0)
             {
@@ -129,7 +118,6 @@ namespace QuanLyHS_THPT.GUI
                 {
                     MessageBox.Show("ma hoc sinh khong thoa man", " Lỗi ");
                 }
-
             }
          }
 
@@ -191,13 +179,7 @@ namespace QuanLyHS_THPT.GUI
                     }
                 }
             }
-
         }
-
-        
-
-
-
         private void tbTimKIem_TextChanged(object sender, EventArgs e)
         {
             string searchtxt = tbTimKIem.Text;

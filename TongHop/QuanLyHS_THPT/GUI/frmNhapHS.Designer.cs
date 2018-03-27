@@ -350,7 +350,6 @@
             this.MainMenuStrip = this.menu;
             this.Name = "frmNhapHS";
             this.Text = "Hồ sơ Học sinh";
-            this.Load += new System.EventHandler(this.frmNhapHS_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
