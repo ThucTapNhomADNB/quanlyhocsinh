@@ -183,7 +183,23 @@ FROM dbo.LOP l,dbo.MONHOC m,dbo.LOP_MON lm, dbo.GIAOVIEN gv
 WHERE l.MALOP=lm.MALOP AND m.MAMONHOC=lm.MAMONHOC
 GO 
 
-
+INSERT dbo.GIAOVIEN
+        ( 
+          HOTEN ,
+          GTINH ,
+          NGAYSINH ,
+          NOISINH ,
+          DIACHI ,
+          SODIENTHOAI
+        )
+VALUES  ( 
+          N'Nguyen Van A' , -- HOTEN - nvarchar(50)
+          N'Nam' , -- GIOITINH - nvarchar(5)
+          '11-1-1997', -- NGAYSINH - datetime
+          N'Ha nội' , -- NOISINH - nvarchar(50)
+          N'Hà Nội' , -- DANTOC - nvarchar(50)
+          N'0123456789'  -- TONGIAO - nvarchar(50)
+        )
 
 GO
 SELECT DISTINCT LopMon.TENLOP, LopMon.TENMONHOC, gv.HOTEN 
@@ -246,9 +262,9 @@ INSERT dbo.KETQUAHOCTAP
          
         )
 VALUES  ( 1 , -- MAHOCSINH - int
-          1  -- MALOP - int
-         
+          1  -- MALOP - int        
         )
+
 INSERT dbo.LOP_MON
         ( MAMONHOC, MALOP, MAGIAOVIEN, SOTIET )
 VALUES  ( 0, -- MAMONHOC - int
@@ -263,8 +279,8 @@ INSERT dbo.BANGDIEM
           MAMONHOC 
           
         )
-VALUES  ( 1, -- MAHOCSINH - int
-          4 
+VALUES  ( 2, -- MAHOCSINH - int
+          1 
         )
 GO
 
@@ -318,3 +334,12 @@ GO
 UPDATE dbo.ACCOUNT SET PASSWORD='admin' WHERE USERNAME='admin'AND PASSWORD='123'
 
 UPDATE dbo.ACCOUNT SET PASSWORD='moi' WHERE USERNAME='admin'AND PASSWORD='admin'
+
+create proc ThemLop (@tenlop nvarchar(20), @siso int)
+as
+begin
+	insert into dbo.LOP
+	values (@tenlop, @siso)
+end
+
+	
