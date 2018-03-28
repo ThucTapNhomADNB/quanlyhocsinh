@@ -199,6 +199,7 @@
             this.tbĐiaChi.Name = "tbĐiaChi";
             this.tbĐiaChi.Size = new System.Drawing.Size(120, 20);
             this.tbĐiaChi.TabIndex = 7;
+            this.tbĐiaChi.TextChanged += new System.EventHandler(this.tbĐiaChi_TextChanged);
             // 
             // tbNoiSinh
             // 

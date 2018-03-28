@@ -203,5 +203,10 @@ namespace QuanLyHS_THPT.GUI
             GiaoVienDAL gvDAL = new GiaoVienDAL();
             dgvGiaoVien.DataSource = gvDAL.searchGV(searchtxt);
         }
+
+        private void tbĐiaChi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
