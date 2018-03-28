@@ -14,12 +14,12 @@ namespace QuanLyHS_THPT.DAL
         DatabaseConnect dtConnect = new DatabaseConnect();
         public DataTable LoadDS()
         {
-            string query = "SELECT * FROM  dbo.LOP ";
+            string query = "SELECT l.MALOP,l.TENLOP,l.SISO,l.MA_GVCHUNHIEM,gv.HOTEN FROM dbo.LOP l, dbo.GIAOVIEN gv WHERE l.MA_GVCHUNHIEM=gv.MAGIAOVIEN ";
             return dtConnect.GETdata(query);
         }
         public void insertLOP(Lop l)
         {
-            string query = string.Format("INSERT dbo.LOP VALUES  ( N'{0}', N'{1}' , N'{2}' )", l.TenLop, l.SiSo, l.MaGVCN);
+            string query = string.Format("insert dbo.LOP VALUES  ( N'{0}', N'{1}' , N'{2}' )", l.TenLop, l.SiSo, l.MaGVCN);
             DatabaseConnect dtConnet = new DatabaseConnect();
             dtConnet.ExecuteNonQuery(query);
         }
@@ -34,6 +34,13 @@ namespace QuanLyHS_THPT.DAL
         {
             string query = string.Format("SELECT * FROM dbo.LOP WHERE TENLOP LIKE '%{0}%'", name);
             return dtConnect.GETdata(query);
+        }
+        public Lop getLop(int ma)
+        {
+            Lop l = new Lop();
+            string query = string.Format("SELECT * FROM dbo.LOP WHERE MALOP = {0}", ma);
+            DataTable data = dtConnect.GETdata(query);
+            return l;
         }
     }
 }

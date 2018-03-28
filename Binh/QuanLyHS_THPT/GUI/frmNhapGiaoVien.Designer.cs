@@ -60,7 +60,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.pnlMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pnlMenu.Controls.Add(this.dtpgv);
@@ -199,6 +199,7 @@
             this.tbĐiaChi.Name = "tbĐiaChi";
             this.tbĐiaChi.Size = new System.Drawing.Size(120, 20);
             this.tbĐiaChi.TabIndex = 7;
+            this.tbĐiaChi.TextChanged += new System.EventHandler(this.tbĐiaChi_TextChanged);
             // 
             // tbNoiSinh
             // 
@@ -295,8 +296,8 @@
             // 
             // dgvGiaoVien
             // 
-            this.dgvGiaoVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgvGiaoVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvGiaoVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGiaoVien.Location = new System.Drawing.Point(250, 88);

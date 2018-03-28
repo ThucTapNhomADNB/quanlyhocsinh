@@ -19,7 +19,7 @@ namespace QuanLyHS_THPT.DAL
         }
         public void insertLOP(Lop l)
         {
-            string query = string.Format("INSERT dbo.LOP VALUES  ( N'{0}', N'{1}' , N'{2}' )", l.TenLop, l.SiSo, l.MaGVCN);
+            string query = string.Format("insert dbo.LOP VALUES  ( N'{0}', N'{1}' , N'{2}' )", l.TenLop, l.SiSo, l.MaGVCN);
             DatabaseConnect dtConnet = new DatabaseConnect();
             dtConnet.ExecuteNonQuery(query);
         }
