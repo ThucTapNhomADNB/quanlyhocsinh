@@ -16,7 +16,6 @@ namespace QuanLyHS_THPT.ENTITY
         private string diaChi;
         private string chuyenMon;
         private string soDienThoai;
-
         public int MaGiaoVien
         {
             get

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyHS_THPT.ENTITY;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace QuanLyHS_THPT.GUI
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private Account acc = new Account();
+        public MainForm(string username, string password)
         {
             InitializeComponent();
+            acc.Usename = username;
+            acc.Password = password;
         }
 
         private void hồSơHọcSinhToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,6 +55,45 @@ namespace QuanLyHS_THPT.GUI
         {
             frmPhanCongGiangDay FrmPCGiangDay = new frmPhanCongGiangDay();
             FrmPCGiangDay.ShowDialog();
+        }
+
+        private void kếtQuảHọcTậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmKQHT FrmKQHT = new frmKQHT();
+            FrmKQHT.ShowDialog();
+        }
+
+        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           this.Hide();
+            frmDangNhap FrmDN = new frmDangNhap();
+            FrmDN.ShowDialog();
+           this.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           this.Hide();
+            frmDangNhap FrmDN = new frmDangNhap();
+            FrmDN.ShowDialog();
+            this.Show();
+        }
+
+        private void đôiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoiMatKhau FrmDoiPass = new frmDoiMatKhau(acc.Usename,acc.Password);
+            FrmDoiPass.ShowDialog();
+
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
