@@ -89,3 +89,24 @@ C:\Users\annv\Documents\GitHub\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\Qua
 C:\Users\annv\Documents\GitHub\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
 C:\Users\annv\Documents\GitHub\quanlyhocsinh\TongHop\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
 >>>>>>> 61b13f6dbe3cfc596508aa8453803019b21024bd
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe.config
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.exe
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\bin\Debug\QuanLyHS_THPT.pdb
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csprojResolveAssemblyReference.cache
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Form1.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDoiMatKhau.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmDangNhap.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmHocSinhLop.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmKQHT.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmLop.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmMonHoc.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapDiem.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapGiaoVien.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmNhapHS.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.frmPhanCongGiangDay.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.GUI.MainForm.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.Properties.Resources.resources
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.GenerateResource.Cache
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.csproj.CoreCompileInputs.cache
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.exe
+C:\Users\Thu Binh\Documents\GitHub\quanlyhocsinh\Binh\QuanLyHS_THPT\obj\Debug\QuanLyHS_THPT.pdb
