@@ -30,7 +30,7 @@ namespace QuanLyHS_THPT.DAL
         }
         public void SuaHocSinh(HocSinh hs )
         {
-            string query = string.Format("UPDATE dbo.HOCSINH SET HOTEN ='{0}' ,GIOITINH='{1}',NGAYSINH='{2}',NOISINH='{3}',DANTOC='{4}',TONGIAO='{5}' WHERE MAHOCSINH= {6}", hs.HoTen, hs.GioiTinh, hs.NgaySinh.ToShortDateString(), hs.NoiSinh, hs.DanToc, hs.TonGiao,hs.MaHocSinh);
+            string query = string.Format("UPDATE dbo.HOCSINH SET HOTEN =N'{0}' ,GIOITINH=N'{1}',NGAYSINH='{2}',NOISINH=N'{3}',DANTOC=N'{4}',TONGIAO=N'{5}' WHERE MAHOCSINH= {6}", hs.HoTen, hs.GioiTinh, hs.NgaySinh.ToShortDateString(), hs.NoiSinh, hs.DanToc, hs.TonGiao,hs.MaHocSinh);
             DatabaseConnect dtConnet = new DatabaseConnect();
             dtConnet.ExecuteNonQuery(query);
         }
