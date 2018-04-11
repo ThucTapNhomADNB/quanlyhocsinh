@@ -237,6 +237,7 @@ AS
     DECLARE @MAGIAOVIEN INT 
 	BEGIN 
 	SELECT @MAGIAOVIEN=Deleted.MAGIAOVIEN FROM Deleted
+	UPDATE dbo.ACCOUNT set MAGIAOVIEN=null where MAGIAOVIEN=@MAGIAOVIEN
 	UPDATE dbo.LOP SET MA_GVCHUNHIEM=NULL WHERE MA_GVCHUNHIEM=@MAGIAOVIEN
 	UPDATE dbo.LOP_MON SET MAGIAOVIEN=NULL WHERE MAGIAOVIEN=@MAGIAOVIEN
 	DELETE dbo.GIAOVIEN WHERE MAGIAOVIEN=@MAGIAOVIEN
@@ -260,10 +261,14 @@ INSERT dbo.KETQUAHOCTAP
           MALOP 
          
         )
+VALUES  ( 4 , -- MAHOCSINH - int
+          2  -- MALOP - int        
         )
 
 INSERT dbo.LOP_MON
         ( MAMONHOC, MALOP, MAGIAOVIEN, SOTIET )
+VALUES  ( 1, -- MAMONHOC - int
+          1, -- MALOP - int
           0, -- MAGIAOVIEN - int
           0  -- SOTIET - int
           )
@@ -274,8 +279,6 @@ INSERT dbo.BANGDIEM
           MAMONHOC 
           
         )
-VALUES  ( 2, -- MAHOCSINH - int
-          1 
 VALUES  ( 4, -- MAHOCSINH - int
           2 
         )
