@@ -54,7 +54,16 @@ namespace QuanLyHS_THPT.GUI
 
         private void cbLop_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            try
+            {
+                BangDiemDAL bangDiemDAl = new BangDiemDAL();
+                this.maMon = Convert.ToInt16(cbMonHoc.SelectedValue.ToString());
+                this.maLop = Convert.ToInt16(cbLop.SelectedValue.ToString());
+                dgvHocSinh.DataSource = bangDiemDAl.LoadBangDiemHS(maMon, maLop);
+                // HienThiDSHocSinh();
+            }
+            catch { }
+
         }
 
         private void cbMonHoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -105,6 +114,7 @@ namespace QuanLyHS_THPT.GUI
                             {
                                 bangDiem.DiemCuoiKi = Convert.ToDouble(tbDiemCuoiKi.Text);
                                 bangDiem.DiemTB = (bangDiem.Diem15ph + bangDiem.DiemMieng + bangDiem.Diem1tiet * 2 + bangDiem.DiemCuoiKi * 3)/7.0;
+                                //bangDiem.DiemTB = Math.Round(bangDiem.DiemTB, 2);
                                 BangDiemDAL bangDiemDAl = new BangDiemDAL();
                                 bangDiemDAl.updateBangdiem(bangDiem);
                                 dgvHocSinh.DataSource = bangDiemDAl.LoadBangDiemHS(maMon, maLop);
