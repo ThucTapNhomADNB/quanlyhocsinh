@@ -33,6 +33,7 @@
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbGiaoVien = new System.Windows.Forms.ComboBox();
             this.txtsiso = new System.Windows.Forms.TextBox();
             this.txttenlop = new System.Windows.Forms.TextBox();
             this.txtmalop = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvLop = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbGiaoVien = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -109,6 +109,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(255, 350);
             this.panel1.TabIndex = 2;
+            // 
+            // cbGiaoVien
+            // 
+            this.cbGiaoVien.FormattingEnabled = true;
+            this.cbGiaoVien.Location = new System.Drawing.Point(79, 141);
+            this.cbGiaoVien.Name = "cbGiaoVien";
+            this.cbGiaoVien.Size = new System.Drawing.Size(141, 21);
+            this.cbGiaoVien.TabIndex = 4;
             // 
             // txtsiso
             // 
@@ -278,14 +286,6 @@
             this.label2.Size = new System.Drawing.Size(281, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "DANH SÁCH LỚP HỌC";
-            // 
-            // cbGiaoVien
-            // 
-            this.cbGiaoVien.FormattingEnabled = true;
-            this.cbGiaoVien.Location = new System.Drawing.Point(79, 141);
-            this.cbGiaoVien.Name = "cbGiaoVien";
-            this.cbGiaoVien.Size = new System.Drawing.Size(141, 21);
-            this.cbGiaoVien.TabIndex = 4;
             // 
             // frmLop
             // 
