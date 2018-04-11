@@ -334,6 +334,9 @@ GO
 UPDATE dbo.ACCOUNT SET PASSWORD='admin' WHERE USERNAME='admin'AND PASSWORD='123'
 
 UPDATE dbo.ACCOUNT SET PASSWORD='moi' WHERE USERNAME='admin'AND PASSWORD='admin'
+<<<<<<< HEAD
+GO
+=======
 
 create proc ThemLop (@tenlop nvarchar(20), @siso int)
 as
@@ -343,3 +346,4 @@ begin
 end
 
 	
+>>>>>>> 3969434e713c94b4cab2f1f19071c6fa3f45da23
