@@ -183,23 +183,7 @@ FROM dbo.LOP l,dbo.MONHOC m,dbo.LOP_MON lm, dbo.GIAOVIEN gv
 WHERE l.MALOP=lm.MALOP AND m.MAMONHOC=lm.MAMONHOC
 GO 
 
-INSERT dbo.GIAOVIEN
-        ( 
-          HOTEN ,
-          GTINH ,
-          NGAYSINH ,
-          NOISINH ,
-          DIACHI ,
-          SODIENTHOAI
-        )
-VALUES  ( 
-          N'Nguyen Van A' , -- HOTEN - nvarchar(50)
-          N'Nam' , -- GIOITINH - nvarchar(5)
-          '11-1-1997', -- NGAYSINH - datetime
-          N'Ha nội' , -- NOISINH - nvarchar(50)
-          N'Hà Nội' , -- DANTOC - nvarchar(50)
-          N'0123456789'  -- TONGIAO - nvarchar(50)
-        )
+
 
 GO
 SELECT DISTINCT LopMon.TENLOP, LopMon.TENMONHOC, gv.HOTEN 
@@ -237,7 +221,7 @@ AS
     DECLARE @MAGIAOVIEN INT 
 	BEGIN 
 	SELECT @MAGIAOVIEN=Deleted.MAGIAOVIEN FROM Deleted
-	
+	UPDATE dbo.ACCOUNT SET MAGIAOVIEN=NULL WHERE MAGIAOVIEN=@MAGIAOVIEN
 	UPDATE dbo.LOP SET MA_GVCHUNHIEM=NULL WHERE MA_GVCHUNHIEM=@MAGIAOVIEN
 	UPDATE dbo.LOP_MON SET MAGIAOVIEN=NULL WHERE MAGIAOVIEN=@MAGIAOVIEN
 	DELETE dbo.GIAOVIEN WHERE MAGIAOVIEN=@MAGIAOVIEN
@@ -262,9 +246,9 @@ INSERT dbo.KETQUAHOCTAP
          
         )
 VALUES  ( 1 , -- MAHOCSINH - int
-          1  -- MALOP - int        
+          1  -- MALOP - int
+         
         )
-
 INSERT dbo.LOP_MON
         ( MAMONHOC, MALOP, MAGIAOVIEN, SOTIET )
 VALUES  ( 0, -- MAMONHOC - int
@@ -279,8 +263,8 @@ INSERT dbo.BANGDIEM
           MAMONHOC 
           
         )
-VALUES  ( 2, -- MAHOCSINH - int
-          1 
+VALUES  ( 1, -- MAHOCSINH - int
+          4 
         )
 GO
 
@@ -334,16 +318,75 @@ GO
 UPDATE dbo.ACCOUNT SET PASSWORD='admin' WHERE USERNAME='admin'AND PASSWORD='123'
 
 UPDATE dbo.ACCOUNT SET PASSWORD='moi' WHERE USERNAME='admin'AND PASSWORD='admin'
-<<<<<<< HEAD
 GO
-=======
-
-create proc ThemLop (@tenlop nvarchar(20), @siso int)
-as
-begin
-	insert into dbo.LOP
-	values (@tenlop, @siso)
-end
-
-	
->>>>>>> 3969434e713c94b4cab2f1f19071c6fa3f45da23
+GO
+INSERT INTO dbo.LOP 
+        ( TENLOP, SISO, MA_GVCHUNHIEM )
+VALUES  ( N'11A1', -- TENLOP - nvarchar(20)
+          10, -- SISO - int
+          1023  -- MA_GVCHUNHIEM - int
+          )
+GO
+INSERT INTO dbo.LOP_MON
+        ( MAMONHOC, MALOP, MAGIAOVIEN, SOTIET )
+VALUES  ( 1, -- MAMONHOC - int
+          2, -- MALOP - int
+          1023, -- MAGIAOVIEN - int
+          3  -- SOTIET - int
+          )
+ INSERT INTO dbo.MONHOC
+         ( TENMONHOC )
+ VALUES  ( N'Toán'  -- TENMONHOC - nvarchar(30)
+           )
+ INSERT INTO dbo.LOP
+         ( TENLOP, SISO, MA_GVCHUNHIEM )
+ VALUES  ( N'12A1', -- TENLOP - nvarchar(20)
+           10, -- SISO - int
+           1024  -- MA_GVCHUNHIEM - int
+           )
+INSERT INTO dbo.LOP
+        ( TENLOP, SISO, MA_GVCHUNHIEM )
+VALUES  ( N'12A4', -- TENLOP - nvarchar(20)
+          33, -- SISO - int
+          1025  -- MA_GVCHUNHIEM - int
+          )
+INSERT INTO dbo.HOCSINH
+        ( HOTEN ,
+          GIOITINH ,
+          NGAYSINH ,
+          NOISINH ,
+          DANTOC ,
+          TONGIAO
+        )
+VALUES  ( N'Nguyễn Văn An' , -- HOTEN - nvarchar(50)
+          N'Nam' , -- GIOITINH - nvarchar(5)
+         '2-4-1993' , -- NGAYSINH - datetime
+          N'Cát Trù' , -- NOISINH - nvarchar(50)
+          N'kinh' , -- DANTOC - nvarchar(50)
+          N'không'  -- TONGIAO - nvarchar(50)
+        )
+INSERT INTO dbo.GIAOVIEN
+        ( HOTEN ,
+          GTINH ,
+          NGAYSINH ,
+          NOISINH ,
+          DIACHI ,
+          CHUYENMON ,
+          SODIENTHOAI
+        )
+VALUES  ( N'Nguyễn Văn An' , -- HOTEN - nvarchar(50)
+          N'Nam' , -- GTINH - nvarchar(5)
+          '1-1-1993' , -- NGAYSINH - datetime
+          N'Cát Trù' , -- NOISINH - nvarchar(50)
+          N'Hà Nội' , -- DIACHI - nvarchar(50)
+          N'Lý' , -- CHUYENMON - nvarchar(20)
+          N'092848484'  -- SODIENTHOAI - nvarchar(11)
+        ),
+		 ( N'Nguyễn Văn Thắng' , -- HOTEN - nvarchar(50)
+          N'Nam' , -- GTINH - nvarchar(5)
+          '1-1-1993' , -- NGAYSINH - datetime
+          N'Cát Trù' , -- NOISINH - nvarchar(50)
+          N'Hà Nội' , -- DIACHI - nvarchar(50)
+          N'Hóa' , -- CHUYENMON - nvarchar(20)
+          N'039499595'  -- SODIENTHOAI - nvarchar(11)
+        )

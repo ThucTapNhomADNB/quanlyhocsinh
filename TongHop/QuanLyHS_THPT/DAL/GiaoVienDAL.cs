@@ -29,7 +29,7 @@ namespace QuanLyHS_THPT.DAL
         }
         public void SuaGiaoVien(GiaoVien gv)
         {
-            string query = string.Format("UPDATE dbo.GiaoVien SET HOTEN ='{0}' ,GIOITINH='{1}',NGAYSINH='{2}',NOISINH='{3}',DIACHI='{4}',CHUYENMON='{5}', SODIENTHOAI='{6}' WHERE MAHOCSINH= {7}", gv.HoTen, gv.GioiTinh, gv.NgaySinh.ToShortDateString(), gv.NoiSinh, gv.DiaChi, gv.ChuyenMon,gv.SoDienThoai ,gv.MaGiaoVien);
+            string query = string.Format("UPDATE dbo.GIAOVIEN SET HOTEN =N'{0}' ,GTINH=N'{1}',NGAYSINH='{2}',NOISINH=N'{3}',DIACHI=N'{4}',CHUYENMON=N'{5}', SODIENTHOAI='{6}' WHERE MAGIAOVIEN= {7}", gv.HoTen, gv.GioiTinh, gv.NgaySinh.ToShortDateString(), gv.NoiSinh, gv.DiaChi, gv.ChuyenMon,gv.SoDienThoai ,gv.MaGiaoVien);
             DatabaseConnect dtConnet = new DatabaseConnect();
             dtConnet.ExecuteNonQuery(query);
         }
